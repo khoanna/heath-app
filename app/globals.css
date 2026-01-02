@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
+@theme {
+  --font-sans: var(--font-inter);
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  /* Custom colors from prompt */
+  --color-health-bg-start: #F8F5FC;
+  --color-health-bg-end: #ECE9F9;
+  --color-health-purple: #9B7BFF;
+  --color-health-deep-purple: #2D1B4E;
+  --color-health-lavender: #EEE5FF;
+  --color-health-pink: #F6D9E5;
+  --color-health-blue: #D4EBFF;
+  --color-health-cream: #FAF5E9;
+  --color-health-text: #1F1F1F;
+  --color-health-muted: #7A7A7A;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #F8F5FC;
+  --foreground: #1F1F1F;
+
+  --card: #FFFFFF;
+  --card-foreground: #1F1F1F;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #1F1F1F;
+
+  --primary: #9B7BFF;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #EEE5FF;
+  --secondary-foreground: #2D1B4E;
+
+  --muted: #F1F5F9;
+  --muted-foreground: #7A7A7A;
+
+  --accent: #F6D9E5;
+  --accent-foreground: #2D1B4E;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: rgba(0,0,0,0.06);
+  --input: rgba(0,0,0,0.06);
+  --ring: #9B7BFF;
+
+  --radius: 1.5rem; /* 24px */
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(to bottom, var(--color-health-bg-start), var(--color-health-bg-end));
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  min-height: 100vh;
+}
+
+@utility no-scrollbar {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
