@@ -16,7 +16,7 @@ export default function SetGoalsPage() {
     const w = parseFloat(currentWeight)
     const bmi = (h && w) ? (w / (h * h)).toFixed(1) : "--"
     
-    const loss = (parseFloat(currentWeight) - parseFloat(targetWeight)).toFixed(1)
+    const loss = parseFloat((parseFloat(currentWeight) - parseFloat(targetWeight)).toFixed(1))
 
     return (
         <div className="min-h-screen bg-[#F8F9FE] p-6 text-center font-sans max-w-[420px] mx-auto flex flex-col items-center">

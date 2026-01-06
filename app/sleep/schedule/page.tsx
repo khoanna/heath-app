@@ -71,7 +71,7 @@ export default function SleepSchedulePage() {
           {/* Schedule List */}
           <div className="space-y-4">
               {/* Bedtime */}
-              <Link href="/sleep/bedtime" className="bg-white rounded-[24px] p-4 flex items-center gap-4 shadow-sm block hover:shadow-md transition-shadow">
+              <Link href="/sleep/bedtime" className="bg-white rounded-3xl p-4 flex items-center gap-4 shadow-sm hover:shadow-md transition-shadow">
                    <div className="h-10 w-10 bg-[#FFF5F5] rounded-xl flex items-center justify-center shrink-0">
                         <Moon className="h-5 w-5 text-gray-500" />
                    </div>
