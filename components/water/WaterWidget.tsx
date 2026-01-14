@@ -127,7 +127,7 @@ export function WaterWidget() {
                     <circle 
                       cx="50" cy="50" r="45" 
                       fill="none" 
-                      stroke="#9B7BFF" 
+                      stroke="#2D1B4E" 
                       strokeWidth="8" 
                       strokeLinecap="round"
                       strokeDasharray={`${progress * 2.83}, 283`}

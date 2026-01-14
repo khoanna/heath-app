@@ -13,7 +13,7 @@ export default function WeightPage() {
     const [activeTab, setActiveTab] = useState<Tab>('daily')
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] p-6 pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
                 <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm">
@@ -114,7 +114,7 @@ function DailyViewContent() {
             {/* Grid Stats */}
             <div className="grid grid-cols-2 gap-4">
                  <div className="bg-white rounded-[24px] p-5 shadow-sm min-h-[140px] flex flex-col justify-between">
-                     <div className="h-10 w-10 bg-[#F3E5F5] rounded-xl flex items-center justify-center text-[#9C27B0]">
+                     <div className="h-10 w-10 bg-purple-100 rounded-xl flex items-center justify-center text-[#9C27B0]">
                         <Ruler className="h-5 w-5 rotate-45" />
                      </div>
                      <div>
@@ -152,7 +152,7 @@ function DailyViewContent() {
 
             {/* Log Button */}
             <Link href="/weight/log">
-                <Button className="w-full h-14 bg-[#7C7AF5] hover:bg-[#6866E5] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
+                <Button className="w-full h-14 bg-health-purple hover:bg-[#6866E5] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
                     <Plus className="h-5 w-5" /> Log Today's Weight
                 </Button>
             </Link>
@@ -285,7 +285,7 @@ function WeeklyView() {
                      <TrendingDown className="h-5 w-5 text-white" />
                  </div>
                  <div className="space-y-1">
-                     <h4 className="font-bold text-[#1B5E20] text-sm">Consistent Progress!</h4>
+                     <h4 className="font-bold text-green-800 text-sm">Consistent Progress!</h4>
                      <p className="text-[#2E7D32] text-xs leading-5">You're losing an average of 0.5 kg per week. Keep up the great work!</p>
                  </div>
             </div>
@@ -340,13 +340,13 @@ function MonthlyView() {
             </div>
 
              {/* Motivation Card */}
-            <div className="bg-[#F3E5F5] rounded-[24px] p-5 flex gap-4">
+            <div className="bg-purple-100 rounded-[24px] p-5 flex gap-4">
                  <div className="h-10 w-10 bg-[#AA00FF] rounded-full flex items-center justify-center shrink-0 shadow-sm">
                      <Target className="h-5 w-5 text-white" />
                  </div>
                  <div className="space-y-1">
-                     <h4 className="font-bold text-[#4A148C] text-sm">You're 43% There!</h4>
-                     <p className="text-[#6A1B9A] text-xs leading-5">Only 6 kg left to reach your target weight. You've got this!</p>
+                     <h4 className="font-bold text-purple-900 text-sm">You're 43% There!</h4>
+                     <p className="text-purple-800 text-xs leading-5">Only 6 kg left to reach your target weight. You've got this!</p>
                  </div>
             </div>
         </div>

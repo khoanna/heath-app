@@ -19,7 +19,7 @@ export default function MealDetailPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#FDF8F5] font-sans pb-24 max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent font-sans pb-24 max-w-[420px] mx-auto">
             {/* Hero Section */}
             <div className="relative h-[300px] w-full">
                 <img src={meal.image} alt={meal.title} className="w-full h-full object-cover" />
@@ -123,7 +123,7 @@ export default function MealDetailPage() {
                 {/* Start Cooking Button */}
                 <div className="fixed bottom-6 left-6 right-6 z-10 max-w-[calc(420px-3rem)] mx-auto">
                     <Link href={`/food/${id}/cook`}>
-                        <button className="w-full bg-[#FF876C] text-white py-4 rounded-[20px] font-bold shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-[#ff7656] transition-colors">
+                        <button className="w-full bg-orange-400 text-white py-4 rounded-[20px] font-bold shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-orange-500 transition-colors">
                             Start Cooking <Play className="h-4 w-4 fill-white" />
                         </button>
                     </Link>

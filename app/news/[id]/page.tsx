@@ -53,7 +53,7 @@ export default function ArticleDetailPage() {
                 
                 {/* Badges */}
                 <div className="flex items-center gap-3 mb-4">
-                    <span className="bg-[#00CFAE] text-white px-4 py-1.5 rounded-full text-xs font-bold">
+                    <span className="bg-teal-500 text-white px-4 py-1.5 rounded-full text-xs font-bold">
                         {article.category}
                     </span>
                     <span className="border border-gray-200 text-gray-500 px-4 py-1.5 rounded-full text-xs font-medium flex items-center gap-1.5">
@@ -78,7 +78,7 @@ export default function ArticleDetailPage() {
                             <p className="text-[10px] text-gray-400">{article.timeAgo}</p>
                         </div>
                     </div>
-                    <button className="bg-[#00CFAE] text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm shadow-teal-100 hover:bg-[#00bda0] transition-colors">
+                    <button className="bg-teal-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-sm shadow-teal-100 hover:bg-teal-600 transition-colors">
                         Follow
                     </button>
                 </div>
@@ -117,7 +117,7 @@ export default function ArticleDetailPage() {
 
              {/* Bottom Share Button */}
              <div className="fixed bottom-6 left-6 right-6 z-20 max-w-[420px] mx-auto">
-                <button className="w-full bg-[#00CFAE] text-white py-4 rounded-[20px] font-bold shadow-lg shadow-teal-100 flex items-center justify-center gap-2 hover:bg-[#00bda0] transition-colors">
+                <button className="w-full bg-teal-500 text-white py-4 rounded-[20px] font-bold shadow-lg shadow-teal-100 flex items-center justify-center gap-2 hover:bg-teal-600 transition-colors">
                     <Share2 className="h-4 w-4" /> Share Article
                 </button>
             </div>

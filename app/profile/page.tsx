@@ -9,7 +9,7 @@ import { Switch } from "@/components/ui/switch"
 
 export default function ProfilePage() {
     return (
-        <div className="min-h-screen bg-[#F8F9FE] pb-28 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent pb-28 font-sans max-w-[420px] mx-auto">
             {/* Header */}
             <header className="px-6 pt-10 pb-6 flex items-center gap-4 bg-white sticky top-0 z-10">
                 <h1 className="text-xl font-bold text-health-deep-purple flex-1 text-center pr-0">My Profile</h1>
@@ -107,7 +107,7 @@ export default function ProfilePage() {
                 </div>
 
                 {/* Logout */}
-                <button className="w-full bg-[#FF4D4D] text-white py-4 rounded-[24px] font-bold shadow-lg shadow-red-100 flex items-center justify-center gap-2 hover:bg-[#ff3333] transition-colors mb-6">
+                <button className="w-full bg-[#FF4D4D] text-white py-4 rounded-[24px] font-bold shadow-lg shadow-red-100 flex items-center justify-center gap-2 hover:bg-red-600 transition-colors mb-6">
                     <LogOut className="h-5 w-5" /> Log Out
                 </button>
 

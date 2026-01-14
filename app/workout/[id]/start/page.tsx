@@ -27,9 +27,9 @@ export default function WorkoutStartPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] flex flex-col font-sans max-w-[420px] mx-auto relative overflow-hidden">
+        <div className="min-h-screen bg-transparent flex flex-col font-sans max-w-[420px] mx-auto relative overflow-hidden">
             {/* Header */}
-            <header className="px-6 pt-6 pb-4 flex items-center justify-between relative z-10 bg-[#7C7AF5] text-white">
+            <header className="px-6 pt-6 pb-4 flex items-center justify-between relative z-10 bg-health-purple text-white">
                 <Link href={`/workout/${params.id}`} className="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
                     <ChevronLeft className="h-5 w-5 text-white" />
                 </Link>
@@ -38,7 +38,7 @@ export default function WorkoutStartPage() {
             </header>
             
             {/* Purple Background Extension */}
-            <div className="absolute top-0 left-0 right-0 h-[300px] bg-[#7C7AF5] rounded-b-[40px] z-0" />
+            <div className="absolute top-0 left-0 right-0 h-[300px] bg-health-purple rounded-b-[40px] z-0" />
 
             {/* Main Content */}
             <div className="flex-1 flex flex-col items-center justify-start relative z-10 px-6 pt-2">
@@ -69,14 +69,14 @@ export default function WorkoutStartPage() {
                     <Button 
                         variant="outline" 
                         onClick={() => setTimeLeft(139)}
-                        className="h-14 px-8 rounded-[20px] border-[#7C7AF5] text-[#7C7AF5] hover:bg-[#7C7AF5]/10 bg-transparent flex gap-2"
+                        className="h-14 px-8 rounded-[20px] border-[#7C7AF5] text-health-purple hover:bg-health-purple/10 bg-transparent flex gap-2"
                     >
                         <RotateCcw className="h-5 w-5" /> Restart
                     </Button>
 
                     <Button 
                         onClick={() => setIsPaused(!isPaused)}
-                        className="h-14 px-10 rounded-[20px] bg-[#7C7AF5] hover:bg-[#6866E5] text-white flex gap-2 shadow-lg shadow-indigo-200"
+                        className="h-14 px-10 rounded-[20px] bg-health-purple hover:bg-[#6866E5] text-white flex gap-2 shadow-lg shadow-indigo-200"
                     >
                         {isPaused ? <Play className="h-5 w-5 fill-current" /> : <Pause className="h-5 w-5 fill-current" />} 
                         {isPaused ? "Resume" : "Pause"}
@@ -91,7 +91,7 @@ export default function WorkoutStartPage() {
                  {/* Footer Status Card */}
                 <div className="w-full bg-white rounded-[24px] p-4 py-5 shadow-sm mt-8 mb-6 flex items-center justify-center">
                     <p className="text-gray-500 text-sm">
-                        Exercise <span className="font-bold text-[#7C7AF5]">1</span> of 20 • 200 calories burned
+                        Exercise <span className="font-bold text-health-purple">1</span> of 20 • 200 calories burned
                     </p>
                 </div>
             </div>

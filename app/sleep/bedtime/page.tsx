@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export default function SleepModePage() {
   return (
-    <div className="min-h-screen bg-[#2D3483] p-6 pb-12 font-sans max-w-[420px] mx-auto text-white flex flex-col items-center relative overflow-hidden">
+    <div className="min-h-screen bg-health-deep-purple p-6 pb-12 font-sans max-w-[420px] mx-auto text-white flex flex-col items-center relative overflow-hidden">
         {/* Stars Decoration */}
         <div className="absolute top-10 left-10 text-yellow-300 text-xl animate-pulse">✨</div>
         <div className="absolute top-40 right-10 text-yellow-300 text-2xl animate-pulse delay-700">⭐</div>
@@ -36,7 +36,7 @@ export default function SleepModePage() {
         </div>
 
         {/* Details Card */}
-        <div className="w-full bg-[#3D4598]/50 border border-white/10 rounded-[24px] p-6 mb-8 backdrop-blur-md">
+        <div className="w-full bg-indigo-800/50 border border-white/10 rounded-[24px] p-6 mb-8 backdrop-blur-md">
             {/* Bedtime */}
             <div className="flex items-center gap-4 mb-6">
                 <div className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center">
@@ -78,12 +78,12 @@ export default function SleepModePage() {
         {/* Actions */}
         <div className="w-full space-y-6 mt-auto">
              <Link href="/">
-                <Button className="w-full h-14 bg-white text-[#2D3483] hover:bg-gray-100 rounded-[20px] text-base font-medium">
+                <Button className="w-full h-14 bg-white text-health-deep-purple hover:bg-gray-100 rounded-[20px] text-base font-medium">
                     <Moon className="h-4 w-4 mr-2" /> Got it, Going to Sleep
                 </Button>
             </Link>
 
-            <Button variant="ghost" className="w-full h-14 bg-[#3D4598] hover:bg-[#4D55A8] text-white rounded-[20px] text-sm border border-white/10">
+            <Button variant="ghost" className="w-full h-14 bg-indigo-800 hover:bg-[#4D55A8] text-white rounded-[20px] text-sm border border-white/10">
                 Remind me in 15 minutes
             </Button>
         </div>

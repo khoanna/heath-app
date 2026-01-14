@@ -36,7 +36,7 @@ export default function WorkoutDetailsPage() {
     const workout = WORKOUTS_DATA[id] || WORKOUTS_DATA["full-body-warmup"]
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] pb-24 relative font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent pb-24 relative font-sans max-w-[420px] mx-auto">
             {/* Header Image Background */}
             <div className="h-[300px] w-full relative">
                 <img src={workout.image} alt={workout.title} className="w-full h-full object-cover" />
@@ -54,11 +54,11 @@ export default function WorkoutDetailsPage() {
             </div>
 
             {/* Content Card - Negative Margin to overlap */}
-            <div className="relative -mt-10 bg-[#F8F9FE] rounded-t-[32px] px-6 pt-8">
+            <div className="relative -mt-10 bg-transparent rounded-t-[32px] px-6 pt-8">
                  {/* Title & Tags */}
                  <div className="flex gap-2 mb-4">
                      {workout.tags.map((tag: string, i: number) => (
-                         <span key={i} className={`px-4 py-1.5 rounded-full text-xs font-bold ${i === 0 ? 'bg-[#7C7AF5] text-white' : 'bg-white text-gray-600 border border-gray-100'}`}>
+                         <span key={i} className={`px-4 py-1.5 rounded-full text-xs font-bold ${i === 0 ? 'bg-health-purple text-white' : 'bg-white text-gray-600 border border-gray-100'}`}>
                              {tag}
                          </span>
                      ))}
@@ -69,12 +69,12 @@ export default function WorkoutDetailsPage() {
                  {/* Stats Cards */}
                  <div className="grid grid-cols-3 gap-3 mb-8">
                      <div className="bg-white rounded-[20px] p-3 py-4 flex flex-col items-center justify-center shadow-sm">
-                         <Clock className="h-5 w-5 text-[#7C7AF5] mb-2" />
+                         <Clock className="h-5 w-5 text-health-purple mb-2" />
                          <p className="text-[10px] text-gray-400 mb-1">Duration</p>
                          <p className="font-bold text-health-deep-purple text-sm">{workout.duration}</p>
                      </div>
                      <div className="bg-white rounded-[20px] p-3 py-4 flex flex-col items-center justify-center shadow-sm">
-                         <Zap className="h-5 w-5 text-[#7C7AF5] mb-2" />
+                         <Zap className="h-5 w-5 text-health-purple mb-2" />
                          <p className="text-[10px] text-gray-400 mb-1">Exercises</p>
                          <p className="font-bold text-health-deep-purple text-sm">{workout.exercisesCount}</p>
                      </div>
@@ -101,7 +101,7 @@ export default function WorkoutDetailsPage() {
                              <Link href={`/workout/${id}/exercise/${ex.id}`} key={ex.id} className="block">
                                 <div className="bg-white rounded-[20px] p-4 flex items-center justify-between shadow-sm hover:shadow-md transition-shadow cursor-pointer">
                                     <div className="flex items-center gap-4">
-                                        <div className="h-8 w-8 bg-[#7C7AF5] rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0">
+                                        <div className="h-8 w-8 bg-health-purple rounded-full flex items-center justify-center text-white text-xs font-bold shrink-0">
                                             {ex.id}
                                         </div>
                                         <div>
@@ -137,7 +137,7 @@ export default function WorkoutDetailsPage() {
             {/* Sticky Bottom Button */}
             <div className="fixed bottom-6 left-0 right-0 max-w-[420px] mx-auto px-6 z-20">
                 <Link href={`/workout/${id}/start`}>
-                    <Button className="w-full h-14 bg-[#7C7AF5] hover:bg-[#6866E5] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
+                    <Button className="w-full h-14 bg-health-purple hover:bg-[#6866E5] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
                         <Play className="h-5 w-5 fill-current" /> Start Workout
                     </Button>
                 </Link>

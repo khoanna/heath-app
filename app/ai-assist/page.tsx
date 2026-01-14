@@ -75,7 +75,7 @@ export default function AiAssistPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#FDF8F5] pb-24 font-sans max-w-[420px] mx-auto flex flex-col relative">
+        <div className="min-h-screen bg-transparent pb-24 font-sans max-w-[420px] mx-auto flex flex-col relative">
             {/* Header */}
             <header className="px-6 py-4 bg-white/80 backdrop-blur-md sticky top-0 z-10 flex items-center justify-between shadow-sm">
                 <div className="flex items-center gap-3">
@@ -171,7 +171,7 @@ export default function AiAssistPage() {
             )}
 
             {/* Input Area */}
-            <div className="sticky bottom-[80px] p-4 bg-[#FDF8F5] backdrop-blur-sm">
+            <div className="sticky bottom-[80px] p-4 bg-transparent backdrop-blur-sm">
                 <div className="relative bg-white rounded-[24px] shadow-lg shadow-purple-50 p-2 flex items-center pr-2 border border-gray-100/50">
                     <input 
                         type="text" 

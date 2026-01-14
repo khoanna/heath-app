@@ -15,7 +15,7 @@ export default function WaterPage() {
     const handleRemove = () => setCurrent(prev => Math.max(0, prev - 1))
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
             {/* Header */}
             <div className="flex items-center mb-6 relative">
                 <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm z-10">
@@ -124,7 +124,7 @@ export default function WaterPage() {
             </div>
 
             {/* Banner */}
-            <div className="bg-[#FFF5D2] rounded-[24px] p-6 mb-6 flex flex-col items-center justify-center text-center">
+            <div className="bg-yellow-100 rounded-[24px] p-6 mb-6 flex flex-col items-center justify-center text-center">
                 <h3 className="font-bold text-health-deep-purple text-lg mb-1 flex items-center gap-2">
                     Keep Going! <span className="text-xl">💪</span>
                 </h3>

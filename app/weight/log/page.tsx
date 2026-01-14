@@ -14,7 +14,7 @@ export default function LogWeightPage() {
              <div className="bg-white w-full max-w-[420px] rounded-[32px] p-8 shadow-sm text-center">
                  {/* Icon */}
                  <div className="w-full flex justify-center mb-6">
-                    <div className="h-20 w-20 bg-[#D9F4FF] rounded-full flex items-center justify-center">
+                    <div className="h-20 w-20 bg-blue-100 rounded-full flex items-center justify-center">
                          <Scale className="h-10 w-10 text-[#0066FF]" />
                     </div>
                 </div>

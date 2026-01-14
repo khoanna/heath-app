@@ -61,7 +61,7 @@ export default function ExerciseDetailsPage() {
     const displayData = EXERCISE_DETAILS[eId as string] ? data : { ...data, name: `Exercise ${eId}` }
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
+        <div className="min-h-screen bg-transparent pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
             {/* Header */}
             <div className="px-6 pt-6 mb-6 flex items-center justify-between">
                 <Link href={`/workout/${id}`} className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm">
@@ -111,10 +111,10 @@ export default function ExerciseDetailsPage() {
                 {/* Important Note for UI/UX */}
                 { !displayData.isWarmUp && (
                      <div className="bg-[#FFF8E1] border border-[#FFE0B2] rounded-[20px] p-4 mb-6 flex gap-3">
-                         <AlertCircle className="h-5 w-5 text-[#FF6F00] shrink-0" />
+                         <AlertCircle className="h-5 w-5 text-orange-600 shrink-0" />
                          <div>
-                             <p className="text-[#FF6F00] font-bold text-xs mb-1">Warm Up Recommended</p>
-                             <p className="text-[#FF8F00] text-[10px] leading-4">
+                             <p className="text-orange-600 font-bold text-xs mb-1">Warm Up Recommended</p>
+                             <p className="text-orange-500 text-[10px] leading-4">
                                  This is a strenuous exercise. Ensure you have completed a warm-up routine prevents injury.
                              </p>
                          </div>
@@ -135,7 +135,7 @@ export default function ExerciseDetailsPage() {
                      <div className="space-y-4 relative border-l-2 border-indigo-100 ml-2 pl-6">
                          {displayData.steps.map((step: string, i: number) => (
                              <div key={i} className="relative">
-                                 <span className="absolute -left-[31px] top-0 h-6 w-6 bg-[#7C7AF5] rounded-full text-white text-[10px] font-bold flex items-center justify-center ring-4 ring-white">
+                                 <span className="absolute -left-[31px] top-0 h-6 w-6 bg-health-purple rounded-full text-white text-[10px] font-bold flex items-center justify-center ring-4 ring-white">
                                      {i + 1}
                                  </span>
                                  <p className="text-gray-600 text-xs leading-5">
@@ -149,7 +149,7 @@ export default function ExerciseDetailsPage() {
                  {/* Focus Area */}
                 <div className="mb-8">
                      <h3 className="font-bold text-health-deep-purple text-sm mb-3">Common Mistakes</h3>
-                     <div className="bg-[#F8F9FE] rounded-[20px] p-4">
+                     <div className="bg-transparent rounded-[20px] p-4">
                          {displayData.mistakes.map((mistake: string, i: number) => (
                              <div key={i} className="flex gap-3 mb-2 last:mb-0">
                                  <div className="h-4 w-4 rounded-full bg-red-100 flex items-center justify-center shrink-0 mt-0.5">
@@ -164,7 +164,7 @@ export default function ExerciseDetailsPage() {
 
             {/* Bottom Button */}
             <div className="p-6 pt-0 mt-auto">
-                 <Button className="w-full h-14 bg-[#7C7AF5] hover:bg-[#6866E5] text-white rounded-[20px] text-base font-medium">
+                 <Button className="w-full h-14 bg-health-purple hover:bg-[#6866E5] text-white rounded-[20px] text-base font-medium">
                      Mark as Completed
                  </Button>
             </div>

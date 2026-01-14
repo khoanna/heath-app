@@ -8,11 +8,11 @@ import { useState } from "react"
 import { cn } from "@/lib/utils"
 
 const colors = [
-    { id: 'blue', bg: 'bg-[#D9F4FF]', dot: 'bg-blue-500' },
-    { id: 'green', bg: 'bg-[#D6FBE5]', dot: 'bg-green-500' },
-    { id: 'yellow', bg: 'bg-[#FFF5D2]', dot: 'bg-yellow-500' },
-    { id: 'purple', bg: 'bg-[#F3E5F5]', dot: 'bg-purple-500' },
-    { id: 'pink', bg: 'bg-[#FFD9EA]', dot: 'bg-pink-500' },
+    { id: 'blue', bg: 'bg-blue-100', dot: 'bg-blue-500' },
+    { id: 'green', bg: 'bg-green-100', dot: 'bg-green-500' },
+    { id: 'yellow', bg: 'bg-yellow-100', dot: 'bg-yellow-500' },
+    { id: 'purple', bg: 'bg-purple-100', dot: 'bg-purple-500' },
+    { id: 'pink', bg: 'bg-pink-100', dot: 'bg-pink-500' },
 ]
 
 export default function AddMedicationPage() {
@@ -22,7 +22,7 @@ export default function AddMedicationPage() {
     const [dosage, setDosage] = useState("")
 
     return (
-        <div className="min-h-screen bg-[#F8F5FC] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
              {/* Header */}
             <div className="flex items-center mb-8 relative">
                 <Link href="/medications" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm z-10">
@@ -89,7 +89,7 @@ export default function AddMedicationPage() {
                 <div className="space-y-2">
                      <div className="flex justify-between items-center">
                         <label className="text-sm font-medium text-health-deep-purple">Reminder Times</label>
-                        <button className="bg-[#FF2D6C] text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1">
+                        <button className="bg-pink-500 text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-1">
                             <Plus className="h-3 w-3" /> Add Time
                         </button>
                      </div>
@@ -121,7 +121,7 @@ export default function AddMedicationPage() {
                     </div>
                 </div>
 
-                <Button className="w-full h-14 bg-[#FF2D6C] hover:bg-[#E61E5C] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-pink-200 mt-4">
+                <Button className="w-full h-14 bg-pink-500 hover:bg-[#E61E5C] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-pink-200 mt-4">
                     Save Medication
                 </Button>
             </div>

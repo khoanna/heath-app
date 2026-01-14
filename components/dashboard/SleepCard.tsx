@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 
 export function SleepCard() {
   return (
-    <Card className="border-none shadow-lg shadow-health-purple/20 bg-gradient-to-br from-[#9B7BFF] to-[#2D1B4E] text-white rounded-[28px] overflow-hidden relative">
+    <Card className="border-none shadow-lg shadow-health-purple/20 bg-linear-to-br from-health-purple to-health-deep-purple text-white rounded-[28px] overflow-hidden relative">
       {/* Decorative blob */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none" />
       

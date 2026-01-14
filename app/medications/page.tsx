@@ -17,7 +17,7 @@ const days = [
 
 export default function MedicationsPage() {
   return (
-    <div className="min-h-screen bg-[#F8F5FC] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+    <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
             <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm">
@@ -26,7 +26,7 @@ export default function MedicationsPage() {
             <h1 className="text-lg font-bold text-health-deep-purple flex items-center gap-2">
                 Medications 💊
             </h1>
-            <Link href="/medications/add" className="h-10 w-10 bg-[#FF2D6C] rounded-full flex items-center justify-center shadow-md text-white transition-transform active:scale-95">
+            <Link href="/medications/add" className="h-10 w-10 bg-pink-500 rounded-full flex items-center justify-center shadow-md text-white transition-transform active:scale-95">
                 <Plus className="h-6 w-6" />
             </Link>
         </div>
@@ -42,7 +42,7 @@ export default function MedicationsPage() {
                      <button className={cn(
                         "h-14 w-11 rounded-[18px] flex flex-col items-center justify-center text-xs font-medium transition-all",
                         d.active 
-                            ? "bg-[#FF2D6C] text-white shadow-md shadow-pink-200" 
+                            ? "bg-pink-500 text-white shadow-md shadow-pink-200" 
                             : "bg-transparent text-gray-400 hover:bg-gray-50"
                      )}>
                         <span className={cn("block w-1.5 h-1.5 rounded-full mb-1", d.active ? "bg-white" : "bg-[#FF87AB]")}></span>
@@ -74,7 +74,7 @@ export default function MedicationsPage() {
             <h3 className="text-health-deep-purple font-bold mb-4">Today's Medications</h3>
 
             {/* Card 1 - Aspirin */}
-            <div className="bg-[#D9F4FF] rounded-[24px] p-5 relative overflow-hidden">
+            <div className="bg-blue-100 rounded-[24px] p-5 relative overflow-hidden">
                 <div className="flex gap-4 mb-4">
                     <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center shrink-0">
                         <Paperclip className="h-6 w-6 text-blue-500 rotate-45" />
@@ -90,7 +90,7 @@ export default function MedicationsPage() {
                         <div className="flex items-center gap-1 text-xs font-semibold text-gray-700">
                             <Clock className="h-3 w-3 text-green-500" /> 8:00 AM
                         </div>
-                        <div className="h-5 w-5 bg-[#00CFAE] rounded-full flex items-center justify-center">
+                        <div className="h-5 w-5 bg-teal-500 rounded-full flex items-center justify-center">
                             <Check className="h-3 w-3 text-white" />
                         </div>
                     </div>
@@ -103,10 +103,10 @@ export default function MedicationsPage() {
             </div>
 
             {/* Card 2 - Vitamins */}
-            <div className="bg-[#D6FBE5] rounded-[24px] p-5">
+            <div className="bg-green-100 rounded-[24px] p-5">
                 <div className="flex gap-4 mb-4">
                      <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center shrink-0">
-                        <LinkIcon className="h-6 w-6 text-[#00CFAE] rotate-45" />
+                        <LinkIcon className="h-6 w-6 text-teal-500 rotate-45" />
                     </div>
                     <div>
                         <h4 className="font-bold text-health-deep-purple text-lg">Vitamins</h4>
@@ -123,10 +123,10 @@ export default function MedicationsPage() {
             </div>
 
              {/* Card 3 - Vitamin C */}
-             <div className="bg-[#FFF5D2] rounded-[24px] p-5">
+             <div className="bg-yellow-100 rounded-[24px] p-5">
                 <div className="flex gap-4 mb-4">
                      <div className="h-12 w-12 bg-white rounded-full flex items-center justify-center shrink-0">
-                        <LinkIcon className="h-6 w-6 text-[#FF876C] rotate-45" />
+                        <LinkIcon className="h-6 w-6 text-orange-400 rotate-45" />
                     </div>
                     <div>
                         <h4 className="font-bold text-health-deep-purple text-lg">Vitamin C</h4>

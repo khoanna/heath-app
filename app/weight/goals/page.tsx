@@ -19,12 +19,12 @@ export default function SetGoalsPage() {
     const loss = parseFloat((parseFloat(currentWeight) - parseFloat(targetWeight)).toFixed(1))
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] p-6 text-center font-sans max-w-[420px] mx-auto flex flex-col items-center">
+        <div className="min-h-screen bg-transparent p-6 text-center font-sans max-w-[420px] mx-auto flex flex-col items-center">
             
             <div className="bg-white w-full rounded-[32px] p-6 shadow-sm flex-1 flex flex-col">
                 {/* Icon Header */}
                 <div className="w-full flex justify-center mb-6">
-                    <div className="h-20 w-20 bg-[#D9F4FF] rounded-full flex items-center justify-center">
+                    <div className="h-20 w-20 bg-blue-100 rounded-full flex items-center justify-center">
                          <Scale className="h-10 w-10 text-[#0066FF]" />
                     </div>
                 </div>
@@ -105,7 +105,7 @@ export default function SetGoalsPage() {
 
                 <div className="mt-auto">
                      <Link href="/weight">
-                        <Button className="w-full h-14 bg-[#7C7AF5] hover:bg-[#6866E5] text-white rounded-[16px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
+                        <Button className="w-full h-14 bg-health-purple hover:bg-[#6866E5] text-white rounded-[16px] text-lg font-medium shadow-lg shadow-indigo-200 flex items-center justify-center gap-2">
                             Start Tracking <ArrowRight className="h-5 w-5" />
                         </Button>
                     </Link>

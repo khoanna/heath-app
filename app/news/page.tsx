@@ -26,7 +26,7 @@ export default function NewsPage() {
     })
 
     return (
-        <div className="min-h-screen bg-[#FDF8F5] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
              {/* Header */}
              <div className="flex items-center gap-4 mb-6 relative">
                  <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
@@ -58,7 +58,7 @@ export default function NewsPage() {
                         className={cn(
                             "h-9 px-4 rounded-full flex items-center gap-2 text-xs font-bold whitespace-nowrap transition-colors shadow-sm",
                             activeCategory === cat.id 
-                                ? "bg-[#00CFAE] text-white shadow-emerald-100" 
+                                ? "bg-teal-500 text-white shadow-emerald-100" 
                                 : "bg-white text-gray-500"
                         )}
                      >
@@ -100,7 +100,7 @@ export default function NewsPage() {
                                  
                                  {/* Read Time */}
                                  <div className="mt-auto">
-                                      <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#F0FBFA] text-[#00CFAE] rounded-lg text-[10px] font-bold">
+                                      <div className="inline-flex items-center gap-1 px-2 py-1 bg-[#F0FBFA] text-teal-500 rounded-lg text-[10px] font-bold">
                                           <Clock className="h-3 w-3" /> {article.readTime}
                                       </div>
                                  </div>

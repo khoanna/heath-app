@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export default function SleepTrackerPage() {
   return (
-    <div className="min-h-screen bg-[#F8F9FE] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+    <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm">
@@ -39,17 +39,17 @@ export default function SleepTrackerPage() {
             <svg viewBox="0 0 300 150" className="absolute left-8 right-0 bottom-6 top-4 w-[calc(100%-32px)] h-[calc(100%-30px)] overflow-visible">
                 <defs>
                     <linearGradient id="sleepGradient" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#9B7BFF" stopOpacity="0.4"/>
-                        <stop offset="100%" stopColor="#9B7BFF" stopOpacity="0"/>
+                        <stop offset="0%" stopColor="#2D1B4E" stopOpacity="0.4"/>
+                        <stop offset="100%" stopColor="#2D1B4E" stopOpacity="0"/>
                     </linearGradient>
                 </defs>
                 <path d="M0,120 C30,80 50,80 80,100 C110,120 130,80 160,60 C190,40 210,100 240,60 C270,20 300,30 300,30" 
-                      fill="none" stroke="#9B7BFF" strokeWidth="3" />
+                      fill="none" stroke="#2D1B4E" strokeWidth="3" />
                 <path d="M0,120 C30,80 50,80 80,100 C110,120 130,80 160,60 C190,40 210,100 240,60 C270,20 300,30 300,30 V150 H0 Z" 
                       fill="url(#sleepGradient)" stroke="none" />
                 
                 {/* Active Point (Thursday) */}
-                <circle cx="160" cy="60" r="4" fill="#9B7BFF" stroke="white" strokeWidth="2" />
+                <circle cx="160" cy="60" r="4" fill="#2D1B4E" stroke="white" strokeWidth="2" />
                 
                 {/* Tooltip */}
                 <g transform="translate(160, 30)">
@@ -65,7 +65,7 @@ export default function SleepTrackerPage() {
                 <span>Mon</span>
                 <span>Tue</span>
                 <span>Wed</span>
-                <span className="text-[#5C59E8] font-bold">Thu</span>
+                <span className="text-health-purple font-bold">Thu</span>
                 <span>Fri</span>
                 <span>Sat</span>
             </div>
@@ -88,10 +88,10 @@ export default function SleepTrackerPage() {
       </div>
 
       {/* Daily Sleep Schedule Banner */}
-      <div className="bg-[#E2E6FF]/50 rounded-[20px] p-4 flex items-center justify-between mb-6">
+      <div className="bg-health-lavender/50 rounded-[20px] p-4 flex items-center justify-between mb-6">
           <span className="font-bold text-health-deep-purple">Daily Sleep Schedule</span>
           <Link href="/sleep/schedule">
-              <Button size="sm" className="bg-[#9B7BFF] hover:bg-[#8A6AE8] text-white rounded-full px-6 h-8 text-xs font-medium">
+              <Button size="sm" className="bg-health-deep-purple hover:bg-purple-600 text-white rounded-full px-6 h-8 text-xs font-medium">
                 Check
               </Button>
           </Link>
@@ -104,7 +104,7 @@ export default function SleepTrackerPage() {
           <div className="space-y-4">
               {/* Bedtime */}
               <Link href="/sleep/bedtime" className="bg-white rounded-[24px] p-4 flex items-center gap-4 shadow-sm block hover:shadow-md transition-shadow">
-                   <div className="h-10 w-10 bg-[#FFF5F5] rounded-xl flex items-center justify-center shrink-0">
+                   <div className="h-10 w-10 bg-red-50 rounded-xl flex items-center justify-center shrink-0">
                         <Moon className="h-5 w-5 text-gray-500" /> {/* Placeholder for Bed Icon */}
                    </div>
                    <div className="flex-1">
@@ -113,16 +113,16 @@ export default function SleepTrackerPage() {
                            <MoreHorizontal className="h-4 w-4 text-gray-300" />
                        </div>
                        <div className="flex justify-between items-center">
-                           <p className="text-xs text-gray-400">in <span className="text-[#9B7BFF]">6 hours 22 minutes</span></p>
-                           <Switch defaultChecked className="data-[state=checked]:bg-[#9B7BFF] pointer-events-none" />
+                           <p className="text-xs text-gray-400">in <span className="text-health-deep-purple">6 hours 22 minutes</span></p>
+                           <Switch defaultChecked className="data-[state=checked]:bg-health-deep-purple pointer-events-none" />
                        </div>
                    </div>
               </Link>
 
                {/* Alarm */}
                <div className="bg-white rounded-[24px] p-4 flex items-center gap-4 shadow-sm">
-                   <div className="h-10 w-10 bg-[#FFF9ED] rounded-xl flex items-center justify-center shrink-0">
-                        <AlarmClock className="h-5 w-5 text-[#FF876C]" />
+                   <div className="h-10 w-10 bg-orange-50 rounded-xl flex items-center justify-center shrink-0">
+                        <AlarmClock className="h-5 w-5 text-orange-400" />
                    </div>
                    <div className="flex-1">
                        <div className="flex justify-between items-start mb-1">
@@ -131,7 +131,7 @@ export default function SleepTrackerPage() {
                        </div>
                        <div className="flex justify-between items-center">
                            <p className="text-xs text-gray-400">in <span className="text-gray-400">14hours 30minutes</span></p>
-                           <Switch defaultChecked className="data-[state=checked]:bg-[#9B7BFF]" />
+                           <Switch defaultChecked className="data-[state=checked]:bg-health-deep-purple" />
                        </div>
                    </div>
               </div>

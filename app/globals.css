@@ -30,38 +30,38 @@
   --radius-sm: calc(var(--radius) - 4px);
 
   /* Custom colors from prompt */
-  --color-health-bg-start: #F8F5FC;
-  --color-health-bg-end: #ECE9F9;
-  --color-health-purple: #9B7BFF;
-  --color-health-deep-purple: #2D1B4E;
-  --color-health-lavender: #EEE5FF;
-  --color-health-pink: #F6D9E5;
-  --color-health-blue: #D4EBFF;
-  --color-health-cream: #FAF5E9;
-  --color-health-text: #1F1F1F;
-  --color-health-muted: #7A7A7A;
+  --color-health-bg-start: #F9FAFB;
+  --color-health-bg-end: #F3F4F6;
+  --color-health-purple: #2D1B4E;
+  --color-health-deep-purple: #1A102E;
+  --color-health-lavender: #E0E7FF;
+  --color-health-pink: #FCE7F3;
+  --color-health-blue: #E0F2FE;
+  --color-health-cream: #FEF3C7;
+  --color-health-text: #1F2937;
+  --color-health-muted: #6B7280;
 }
 
 :root {
-  --background: #F8F5FC;
-  --foreground: #1F1F1F;
+  --background: #F9FAFB;
+  --foreground: #1F2937;
 
   --card: #FFFFFF;
-  --card-foreground: #1F1F1F;
+  --card-foreground: #1F2937;
 
   --popover: #FFFFFF;
-  --popover-foreground: #1F1F1F;
+  --popover-foreground: #1F2937;
 
-  --primary: #9B7BFF;
+  --primary: #2D1B4E;
   --primary-foreground: #FFFFFF;
 
-  --secondary: #EEE5FF;
+  --secondary: #E0E7FF;
   --secondary-foreground: #2D1B4E;
 
-  --muted: #F1F5F9;
-  --muted-foreground: #7A7A7A;
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
 
-  --accent: #F6D9E5;
+  --accent: #FCE7F3;
   --accent-foreground: #2D1B4E;
 
   --destructive: #ef4444;
@@ -69,7 +69,7 @@
 
   --border: rgba(0,0,0,0.06);
   --input: rgba(0,0,0,0.06);
-  --ring: #9B7BFF;
+  --ring: #2D1B4E;
 
   --radius: 1.5rem; /* 24px */
 }

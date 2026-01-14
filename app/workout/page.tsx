@@ -27,7 +27,7 @@ const WORKOUTS = [
         time: "22 min",
         calories: 180,
         image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=2670&auto=format&fit=crop", // Yoga/Warmup image
-        tagColor: "bg-[#7C7AF5]"
+        tagColor: "bg-health-purple"
     },
     {
         id: "core-strength",
@@ -37,7 +37,7 @@ const WORKOUTS = [
         time: "18 min",
         calories: 200,
         image: "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?q=80&w=2670&auto=format&fit=crop", // Plank
-        tagColor: "bg-[#7C7AF5]"
+        tagColor: "bg-health-purple"
     },
     {
         id: "legs-squats",
@@ -47,7 +47,7 @@ const WORKOUTS = [
         time: "25 min",
         calories: 250,
         image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=2670&auto=format&fit=crop", // Squats
-        tagColor: "bg-[#7C7AF5]"
+        tagColor: "bg-health-purple"
     },
      {
         id: "upper-body",
@@ -57,7 +57,7 @@ const WORKOUTS = [
         time: "20 min",
         calories: 220,
         image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=2670&auto=format&fit=crop", // Upper Body
-        tagColor: "bg-[#7C7AF5]"
+        tagColor: "bg-health-purple"
     },
     {
         id: "lunges",
@@ -67,7 +67,7 @@ const WORKOUTS = [
         time: "15 min",
         calories: 160,
         image: "https://images.unsplash.com/photo-1579758629938-03607ccdbaba?q=80&w=2670&auto=format&fit=crop", // Lunges (Gym)
-        tagColor: "bg-[#7C7AF5]"
+        tagColor: "bg-health-purple"
     }
 ]
 
@@ -75,7 +75,7 @@ export default function WorkoutPage() {
     const [searchQuery, setSearchQuery] = useState("")
 
     return (
-        <div className="min-h-screen bg-[#F8F9FE] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
             {/* Header */}
             <div className="flex items-center gap-4 mb-6 relative">
                  <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
@@ -103,7 +103,7 @@ export default function WorkoutPage() {
                         key={i}
                         className={cn(
                             "h-10 px-4 rounded-full flex items-center gap-2 text-xs font-medium whitespace-nowrap transition-colors",
-                            cat.active ? "bg-[#7C7AF5] text-white shadow-md shadow-indigo-200" : "bg-white text-gray-500"
+                            cat.active ? "bg-health-purple text-white shadow-md shadow-indigo-200" : "bg-white text-gray-500"
                         )}
                      >
                          <span>{cat.icon}</span> {cat.label}
@@ -118,7 +118,7 @@ export default function WorkoutPage() {
                         key={i}
                         className={cn(
                             "h-10 px-4 rounded-full flex items-center gap-2 text-xs font-medium whitespace-nowrap transition-colors",
-                            type.active ? "bg-[#7C7AF5] text-white shadow-md shadow-indigo-200" : "bg-white text-gray-500"
+                            type.active ? "bg-health-purple text-white shadow-md shadow-indigo-200" : "bg-white text-gray-500"
                         )}
                      >
                          <span>{type.icon}</span> {type.label}
@@ -137,7 +137,7 @@ export default function WorkoutPage() {
                                  
                                  {/* Tags Overlay */}
                                  <div className="absolute top-2 left-2 flex gap-1">
-                                    <div className="bg-[#7C7AF5] text-white text-[10px] font-bold px-2 py-1 rounded-full">
+                                    <div className="bg-health-purple text-white text-[10px] font-bold px-2 py-1 rounded-full">
                                         {workout.tags[0]}
                                     </div>
                                     <div className="bg-white text-black text-[10px] font-bold px-2 py-1 rounded-full">
@@ -156,9 +156,9 @@ export default function WorkoutPage() {
                                  </p>
                                  
                                  <div className="flex items-center gap-2">
-                                     <div className="h-6 px-2 bg-[#F0F4FF] rounded-full flex items-center gap-1">
-                                         <ClockIcon className="h-3 w-3 text-[#7C7AF5]" />
-                                         <span className="text-[10px] font-bold text-[#7C7AF5]">{workout.time}</span>
+                                     <div className="h-6 px-2 bg-health-lavender rounded-full flex items-center gap-1">
+                                         <ClockIcon className="h-3 w-3 text-health-purple" />
+                                         <span className="text-[10px] font-bold text-health-purple">{workout.time}</span>
                                      </div>
                                  </div>
                                  <div className="flex items-center gap-1 mt-1">

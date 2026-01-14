@@ -38,7 +38,7 @@ export default function CookingModePage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#FDF8F5] font-sans flex flex-col max-w-[420px] mx-auto relative overflow-hidden">
+        <div className="min-h-screen bg-transparent font-sans flex flex-col max-w-[420px] mx-auto relative overflow-hidden">
             
             {/* Header / Nav */}
             <div className="p-6 flex items-center gap-4">
@@ -112,7 +112,7 @@ export default function CookingModePage() {
 
                 <button 
                     onClick={handleNext}
-                    className="flex-1 h-14 bg-[#FF876C] rounded-[20px] text-white font-bold text-lg shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-[#ff7656] transition-colors"
+                    className="flex-1 h-14 bg-orange-400 rounded-[20px] text-white font-bold text-lg shadow-lg shadow-orange-200 flex items-center justify-center gap-2 hover:bg-orange-500 transition-colors"
                 >
                     {currentStep === totalSteps - 1 ? (
                         <>Finish <Check className="h-5 w-5" /></>

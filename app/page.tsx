@@ -7,13 +7,13 @@ import { MEALS, ARTICLES } from "@/lib/data"
 
 export default function Dashboard() {
   return (
-    <div className="pb-28 relative overflow-hidden min-h-screen bg-[#F8F9FE]">
+    <div className="pb-28 relative overflow-hidden min-h-screen bg-transparent">
       {/* Header */}
       <header className="px-6 pt-10 pb-6 flex justify-between items-center bg-white sticky top-0 z-20">
         <div className="flex items-center gap-4">
           <Avatar className="h-12 w-12 border border-gray-100">
-            <AvatarFallback className="bg-purple-100">
-               <User className="h-6 w-6 text-purple-600" />
+            <AvatarFallback className="bg-health-lavender">
+               <User className="h-6 w-6 text-health-purple" />
             </AvatarFallback>
           </Avatar>
           <div>
@@ -35,8 +35,8 @@ export default function Dashboard() {
             <Link href="/sleep" className="bg-white p-4 rounded-[24px] flex flex-col justify-between shadow-sm border border-gray-50 hover:shadow-md transition-shadow h-full">
                 <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                        <div className="h-8 w-8 rounded-full bg-[#E2E6FF] flex items-center justify-center">
-                             <Moon className="h-4 w-4 text-[#5C59E8]" />
+                        <div className="h-8 w-8 rounded-full bg-health-lavender flex items-center justify-center">
+                             <Moon className="h-4 w-4 text-health-purple" />
                         </div>
                     </div>
                     <div>
@@ -53,8 +53,8 @@ export default function Dashboard() {
             <Link href="/water" className="bg-white p-4 rounded-[24px] flex flex-col justify-between shadow-sm border border-gray-50 hover:shadow-md transition-shadow h-full">
                 <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                         <div className="h-8 w-8 rounded-full bg-[#D9EFFF] flex items-center justify-center">
-                            <Droplets className="h-4 w-4 text-[#2B8FF4]" />
+                         <div className="h-8 w-8 rounded-full bg-health-blue flex items-center justify-center">
+                            <Droplets className="h-4 w-4 text-blue-500" />
                         </div>
                     </div>
                     <div>
@@ -71,8 +71,8 @@ export default function Dashboard() {
             <Link href="/weight" className="bg-white p-4 rounded-[24px] flex flex-col justify-between shadow-sm border border-gray-50 hover:shadow-md transition-shadow h-full">
                 <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                        <div className="h-8 w-8 rounded-full bg-[#F6DDFE] flex items-center justify-center">
-                            <Scale className="h-4 w-4 text-[#C45EE6]" />
+                        <div className="h-8 w-8 rounded-full bg-health-pink flex items-center justify-center">
+                            <Scale className="h-4 w-4 text-purple-500" />
                         </div>
                     </div>
                     <div>
@@ -89,8 +89,8 @@ export default function Dashboard() {
             <Link href="/medications" className="bg-white p-4 rounded-[24px] flex flex-col justify-between shadow-sm border border-gray-50 hover:shadow-md transition-shadow h-full">
                  <div className="space-y-3">
                     <div className="flex items-center gap-2">
-                        <div className="h-8 w-8 rounded-full bg-[#FFD9EA] flex items-center justify-center">
-                            <Pill className="h-4 w-4 text-[#EB4D88]" />
+                        <div className="h-8 w-8 rounded-full bg-pink-100 flex items-center justify-center">
+                            <Pill className="h-4 w-4 text-pink-500" />
                         </div>
                     </div>
                     <div>
@@ -125,7 +125,7 @@ export default function Dashboard() {
                                 fill 
                                 className="object-cover"
                             />
-                            <div className="absolute top-2 left-2 bg-[#00CFAE] text-white text-[10px] font-bold px-2 py-1 rounded-full">
+                            <div className="absolute top-2 left-2 bg-teal-500 text-white text-[10px] font-bold px-2 py-1 rounded-full">
                                 {article.category}
                             </div>
                         </div>
@@ -168,7 +168,7 @@ export default function Dashboard() {
                             <h3 className="font-bold text-health-deep-purple text-sm line-clamp-1">{meal.title}</h3>
                             <p className="text-[10px] text-gray-400 line-clamp-1">{meal.description}</p>
                             <div className="flex justify-between items-center pt-1">
-                                <span className="text-[#FF876C] font-bold text-xs">{meal.calories} <span className="font-normal text-[10px]">cal</span></span>
+                                <span className="text-orange-500 font-bold text-xs">{meal.calories} <span className="font-normal text-[10px]">cal</span></span>
                             </div>
                         </div>
                     </Link>

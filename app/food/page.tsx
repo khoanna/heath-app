@@ -26,7 +26,7 @@ export default function FoodPage() {
     })
 
     return (
-        <div className="min-h-screen bg-[#FDF8F5] p-6 pb-24 font-sans max-w-[420px] mx-auto">
+        <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto">
              {/* Header */}
              <div className="flex items-center gap-4 mb-6 relative">
                  <Link href="/" className="h-10 w-10 bg-white rounded-full flex items-center justify-center shadow-sm shrink-0">
@@ -55,7 +55,7 @@ export default function FoodPage() {
                         onClick={() => setActiveCategory(cat.id)}
                         className={cn(
                             "h-10 px-4 rounded-full flex items-center gap-2 text-xs font-bold whitespace-nowrap transition-colors shadow-sm",
-                            activeCategory === cat.id ? "bg-[#FF876C] text-white shadow-orange-200" : "bg-white text-gray-500"
+                            activeCategory === cat.id ? "bg-orange-400 text-white shadow-orange-200" : "bg-white text-gray-500"
                         )}
                      >
                          <span>{cat.icon}</span> {cat.label}
@@ -76,7 +76,7 @@ export default function FoodPage() {
                                      <span className="text-[10px] font-bold text-gray-600">{meal.time}</span>
                                  </div>
                                  <div className="absolute top-2 right-2 bg-white/90 backdrop-blur-sm px-2 py-1 rounded-full flex items-center gap-1">
-                                     <Flame className="h-3 w-3 text-[#FF876C] fill-[#FF876C]" />
+                                     <Flame className="h-3 w-3 text-orange-400 fill-orange-400" />
                                      <span className="text-[10px] font-bold text-gray-600">{meal.calories}</span>
                                  </div>
                              </div>

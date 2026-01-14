@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export default function AddAlarmPage() {
   return (
-    <div className="min-h-screen bg-[#F8F9FE] p-6 pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
+    <div className="min-h-screen bg-transparent p-6 pb-24 font-sans max-w-[420px] mx-auto flex flex-col">
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <Link href="/sleep/schedule" className="h-10 w-10 bg-transparent flex items-center justify-center">
@@ -68,13 +68,13 @@ export default function AddAlarmPage() {
               </div>
               <div className="flex-1 flex justify-between items-center border-b border-gray-100 pb-2">
                   <span className="text-gray-500 font-medium">Vibrate When Alarm Sound</span>
-                  <Switch defaultChecked className="data-[state=checked]:bg-[#9B7BFF]" />
+                  <Switch defaultChecked className="data-[state=checked]:bg-health-deep-purple" />
               </div>
           </div>
       </div>
 
       {/* Add Button */}
-      <Button className="w-full h-14 bg-[#9B8AFF] hover:bg-[#8A7AE8] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 mt-4">
+      <Button className="w-full h-14 bg-health-purple hover:bg-[#8A7AE8] text-white rounded-[20px] text-lg font-medium shadow-lg shadow-indigo-200 mt-4">
             Add
       </Button>
 
